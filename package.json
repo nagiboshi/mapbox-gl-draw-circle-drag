@@ -1,0 +1,50 @@
+{
+  "name": "mapboxgl-draw-circle-drag",
+  "version": "1.0.0",
+  "description": "mapbox-gl-draw  plugin for drawing a circle using mouse drag method",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagiboshi/mapbox-gl-draw-circle-drag.git"
+  },
+  "keywords": [
+    "mapbox",
+    "mapbox-gl-draw",
+    "drag",
+    "circle"
+  ],
+  "author": "Oleksandr Afanasiev (nagiboshi)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagiboshi/mapbox-gl-draw-circle-drag/issues"
+  },
+  "homepage": "https://github.com/nagiboshi/mapbox-gl-draw-circle-drag#readme",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.12.0",
+    "@parcel/transformer-typescript-types": "^2.12.0",
+    "@types/mapbox__mapbox-gl-draw": "^1.4.6",
+    "json": "^11.0.0",
+    "parcel": "latest",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@turf/distance": "6.5.0",
+    "@turf/circle": "6.5.0"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.esm.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/types.d.ts",
+  "peerDependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.4.3"
+  }
+}
